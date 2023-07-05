@@ -26,7 +26,6 @@ body{
     align-items: center;
 }
 .header{
-    font: stratosskyeng-regular;
     font-size: 40px;
     width: 208px;
     height: 96px;
@@ -52,7 +51,6 @@ body{
 .box_numbers{
     border: 1px double black;
     border-radius: 15px;
-    color: #004980;
     background-color: white;
     font-size: 64px;
     width: 98px;
