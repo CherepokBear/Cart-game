@@ -4,8 +4,8 @@
 }
 @font-face {
     font-family: 'MyFont'; /* Название твоего шрифта */
-    src: url('../fonts/stratosskyeng-regular.woff2') format('woff2'), /* Путь до твоего файла .woff2 */
-         url('sant-serif.woff') format('woff'); /* Путь до твоего файла .woff */
+    src: url('./fonts/stratosskyeng-regular.woff2') format('woff2'), /* Путь до твоего файла .woff2 */
+         url('MyFont.woff') format('woff'); /* Путь до твоего файла .woff */
     font-weight: normal; /* Насыщенность шрифта */
     font-style: normal; /* Стиль шрифта */
   }
@@ -52,7 +52,6 @@ body{
 .box_numbers{
     border: 1px double black;
     border-radius: 15px;
-    color: #004980;
     background-color: white;
     font-size: 64px;
     width: 98px;
