@@ -60,6 +60,9 @@ body{
     align-items: center;
     justify-content: center;
 }
+a { 
+    text-decoration: none;
+   } 
 .button_start{
     margin-top: 67px;
     background-color: #37c53a;
@@ -67,4 +70,11 @@ body{
     height: 50px;
     width: 246px;
     border-radius: 10px;
+}
+
+.hidden {
+
+}
+.back_side{
+
 }
