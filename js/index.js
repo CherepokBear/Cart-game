@@ -1,54 +1,72 @@
-// const easy = document.querySelector('easy');
-// const middle = document.querySelector('middle');
-// const hard = document.querySelector('hard');
-// const suits = [worms, peaks, bubi, baptize];
-// const rank = [6, 7, 8, 9, 10, J, K, Q, A];
+// const easy = document.querySelector('easy')
+// const middle = document.querySelector('middle')
+// const hard = document.querySelector('hard')
+// const suits = [worms, peaks, bubi, baptize]
+// const rank = [6, 7, 8, 9, 10, J, K, Q, A]
 
-// suits.sort(() => Math.random() - 0.5);
-// rank.sort(() => Math.random() - 0.5);
+// suits.sort(() => Math.random() - 0.5)
+// rank.sort(() => Math.random() - 0.5)
 
-let firstCard = null;
-let secondCard = null;
-let clickable = true;
+// document.querySelector('box_numbers').onclick = function () {
+//     window.location.href = './level/easy_leavel.htmll'
+// }
 
-const cards = document.querySelectorAll('.game-card');
+document.getElementById('easy').onclick = function () {
+    window.location.href = './level/easy_leavel.htmll';
+};
 
-cards.forEach((card, index) => card.addEventListener('click', () => {
-    if (clickable == true && !card.classList.contains('successfully')) {
-        card.classList.add('flip');
+// function easy() {
+//     document.location.replace('./level/easy_leavel.htmll')
+// }
 
-        if (firstCard == null) {
-            firstCard = index;
-        } else {
-            if (index != firstCard) {
-                secondCard = index;
-                clickable = false;
-            }
-        }
+// let firstCard = null
+// let secondCard = null
+// let clickable = true
 
-        if (firstCard != null && secondCard != null && firstCard != secondCard) {
-            if (
-                cards[firstCard].firstElementChild.className ===
-                cards[secondCard].firstElementChild.className
-            ) {
-                setTimeout(() => {
-                    cards[firstCard].classList.add('successfully');
-                    cards[secondCard].classList.add('successfully');
+// const cards = document.querySelectorAll('.game-card')
 
-                    firstCard = null;
-                    secondCard = null;
-                    clickable = true;
-                }, 500);
-            } else {
-                setTimeout(() => {
-                    cards[firstCard].classList.remove('flip');
-                    cards[secondCard].classList.remove('flip');
+// cards.forEach((card, index) =>
+//     card.addEventListener('click', () => {
+//         if (clickable == true && !card.classList.contains('successfully')) {
+//             card.classList.add('flip')
 
-                    firstCard = null;
-                    secondCard = null;
-                    clickable = true;
-                }, 500);
-            }
-        }
-    }
-}));
+//             if (firstCard == null) {
+//                 firstCard = index
+//             } else {
+//                 if (index != firstCard) {
+//                     secondCard = index
+//                     clickable = false
+//                 }
+//             }
+
+//             if (
+//                 firstCard != null &&
+//                 secondCard != null &&
+//                 firstCard != secondCard
+//             ) {
+//                 if (
+//                     cards[firstCard].firstElementChild.className ===
+//                     cards[secondCard].firstElementChild.className
+//                 ) {
+//                     setTimeout(() => {
+//                         cards[firstCard].classList.add('successfully')
+//                         cards[secondCard].classList.add('successfully')
+
+//                         firstCard = null
+//                         secondCard = null
+//                         clickable = true
+//                     }, 500)
+//                 } else {
+//                     setTimeout(() => {
+//                         cards[firstCard].classList.remove('flip')
+//                         cards[secondCard].classList.remove('flip')
+
+//                         firstCard = null
+//                         secondCard = null
+//                         clickable = true
+//                     }, 500)
+//                 }
+//             }
+//         }
+//     }),
+// )
