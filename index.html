@@ -10,16 +10,15 @@
 
 <body>
     <div class="conteiner">
-        <form class="box">
+        <div class="box">
             <h2 class="header">Выбери сложность</h2>
-            <div class="box_row_number">
-                <button class="box_numbers" id="easy">1</button>
-                <button class="box_numbers" id="middle">2</button>
-                <button class="box_numbers" id="hard">3</button>
-            </div>
+            <form class="box_row_number" id="form" action="#" method="POST" onsubmit="">
+                <button type="submit" class="box_numbers" id="easy">1</button>
+                <button type="submit" class="box_numbers" id="middle">2</button>
+                <button type="submit" class="box_numbers" id="hard">3</button>
+            </form>
             <button class="button_start">Старт</button>
-            <!-- <button onclick="easy()">Go to Homepage</button> -->
-        </form>
+        </div>
     </div>
 </body>
 <script type="module" src="./js/index.js"></script>

@@ -1,3 +1,5 @@
+// Пременные
+
 // const easy = document.querySelector('easy')
 // const middle = document.querySelector('middle')
 // const hard = document.querySelector('hard')
@@ -7,17 +9,20 @@
 // suits.sort(() => Math.random() - 0.5)
 // rank.sort(() => Math.random() - 0.5)
 
-// document.querySelector('box_numbers').onclick = function () {
-//     window.location.href = './level/easy_leavel.htmll'
-// }
-
-document.getElementById('easy').onclick = function () {
-    window.location.href = './level/easy_leavel.htmll';
+document.getElementById('easy').onclick = function (e) {
+    e.preventDefault();
+    window.location.href = './level/easy_leavel.html';
+};
+document.getElementById('middle').onclick = function (e) {
+    e.preventDefault();
+    window.location.href = './level/middle_leavel.html';
+};
+document.getElementById('hard').onclick = function (e) {
+    e.preventDefault();
+    window.location.href = './level/hard_leavel.html';
 };
 
-// function easy() {
-//     document.location.replace('./level/easy_leavel.htmll')
-// }
+// ЛОГИКА ИГРЫ
 
 // let firstCard = null
 // let secondCard = null
