@@ -112,6 +112,7 @@ body{
 .card{
     margin-right: 10px;
     padding: 0px 0px 10px 0px;
+    font-size: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +127,7 @@ body{
     background: url(../img/10\ крести.jpg) 0 0/100% no-repeat;
 }
 .card.success{
-    background-color: rgb(22, 52, 22);
+    /* background-color: rgb(22, 52, 22); */
     color:white;
     transform: scale(0.95);
 }

@@ -1,6 +1,8 @@
 // const suits = [worms, peaks, bubi, baptize]
 // const rank = [6, 7, 8, 9, 10, J, K, Q, A]
 import { Card } from "./card.js";
+import { StartTIME } from "./stopwatch.js";
+import { ClearСlock } from "./stopwatch.js";
 
 export function newGame(container, cardsCount) {
     //создать поле
@@ -22,15 +24,6 @@ export function newGame(container, cardsCount) {
 
     //логика игры
     function flip(card) {
-
-        // if (firstCard = card) {
-        //     secondCard.open = true
-        // t = $(this);
-        // t.addClass('.open')
-        // setTimeout(function () {
-        //     t.addClass('.card')
-        // }, 1000);
-        // };
 
         if (firstCard !== null && secondCard !== null) {
             if (firstCard.number != secondCard.number) {
@@ -67,6 +60,7 @@ export function newGame(container, cardsCount) {
             cardsArray = []
             firstCard = null
             secondCard = null
+            init = 0;
 
             newGame(container, cardsCount)
         }
@@ -76,3 +70,4 @@ export function newGame(container, cardsCount) {
 }
 
 newGame(document.getElementById('game'), 6)
+
