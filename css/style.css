@@ -1,0 +1,140 @@
+
+*{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@font-face {
+    font-family: 'MyFont'; 
+    src: url('./fonts/stratosskyeng-regular.woff2') format('woff2'), 
+         url('MyFont.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+  }
+body{
+    font-family: 'stratosskyeng-regular', sans-serif;
+    background:  #004980 no-repeat;
+    z-index: -1;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner{
+    width: 1024px;
+    height: 774px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+
+    font-size: 40px;
+    width: 208px;
+    height: 96px;
+    text-align: center;
+}
+.box{
+    background: #C2F5FF;
+    border-radius: 13px;
+    height: 480px;
+    width: 459px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box_row_number{
+    margin-top: 48px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.box_numbers{
+    border: 1px double black;
+    border-radius: 15px;
+    background-color: white;
+    font-size: 64px;
+    width: 98px;
+    height: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_start{
+    margin-top: 67px;
+    background-color: #37c53a;
+    border: 1.7px solid black;
+    height: 50px;
+    width: 246px;
+    border-radius: 10px;
+}
+
+.btn{
+    font-weight: 400;
+    font-style: 24px;
+    background-color: #37c53a;
+    border: 0px solid black;
+    height: 50px;
+    width: 246px;
+    border-radius: 10px;
+    color: white;
+}
+.stopWatch{
+    width: 155px;
+    height: 91px;
+    color: white;
+}
+.meaning{
+    display: flex;
+    justify-content: space-around;
+}
+.title{
+    width: 860px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+#timer{
+    font-weight: 400;
+    font-size: 64px;
+    width: 155px;
+}
+.min{
+    margin-left: 30px;
+}
+.sek{
+    margin-left: 54px;
+}
+
+
+.card{
+    margin-right: 10px;
+    padding: 0px 0px 10px 0px;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height:200px;
+    background: url(../img/рубашка.jpg) 0 0/100% no-repeat;
+    gap: 85px;
+
+}
+.card.open{
+    color:rgb(60, 52, 42); 
+    background: url(../img/10\ крести.jpg) 0 0/100% no-repeat;
+}
+.card.success{
+    /* background-color: rgb(22, 52, 22); */
+    color:white;
+    transform: scale(0.95);
+}
+.game{
+    margin-top: 35px;
+    width: 860px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
