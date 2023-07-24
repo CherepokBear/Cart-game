@@ -14,6 +14,7 @@ module.exports = {
     },
     module: {
         rules: [{ test: /\.css$/, use: ["style-loader", "css-loader"] },
+        { test: /\.ts$/, use: "ts-loader", exclude: /node_modules/ },
         {
             test: /\.(png|svg|jpg|ipeg|gif)$/i,
             type: "asset/resource",
@@ -36,4 +37,7 @@ module.exports = {
             template: "./level/general.html"
         }),
     ],
+    resolve: {
+        extensions: [".ts", ".js"]
+    }
 };

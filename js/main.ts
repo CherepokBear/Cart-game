@@ -60,7 +60,6 @@ export function newGame(container, cardsCount) {
             cardsArray = []
             firstCard = null
             secondCard = null
-            init = 0;
 
             newGame(container, cardsCount)
         }
